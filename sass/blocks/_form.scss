@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 83px;
+    z-index: 1;
+
+    @include mediaTablet {
+        margin-top: 39px;
+    }
+}
+
+.form__group {
+    position: relative;
+
+    & input {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid $black;
+        background-color: unset;
+
+        transition: all 0.2s ease-in;
+
+        &:focus {
+            border-color: #ddd7c0;
+        }
+    }
+
+    & label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.2s ease-in;
+        padding-top: 2px;
+    }
+
+    & input:focus~label,
+    & input:valid~label {
+        top: -14px;
+        font-size: 12px;
+    }
+
+    &:focus {
+        border-bottom: 1px solid #ddd7c0;
+    }
+}

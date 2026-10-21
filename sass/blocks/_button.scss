@@ -1,0 +1,23 @@
+.button {
+    width: 176px;
+    padding: 12px 20px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    color: #fff;
+    background: #212529;
+
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        color: #212529;
+        background: #ddd7c0;
+    }
+
+    &:active {
+        background: #cbc6b2;
+    }
+
+    &:disabled {
+        background: rgba(33, 37, 41, 0.5);
+    }
+}

@@ -1,0 +1,113 @@
+.hero-section {
+    margin-bottom: 120px;
+
+    @include mediaTablet {
+        margin-bottom: 48px;
+    }
+}
+
+.hero-section__flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include mediaTablet {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .hero-section__btn-desktop {
+            display: none;
+        }
+    }
+}
+
+.hero-section__title {
+    font-family: $second-family;
+    font-size: clamp(28px, 0.75rem + 5vw, 72px);
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $black;
+    max-width: 710px;
+    width: 100%;
+
+    @include mediaTablet {
+        margin-bottom: 20px;
+    }
+
+    @include mobileLarge {
+        overflow-wrap: break-word;
+    }
+}
+
+.hero-section__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    @include mediaTablet {
+        flex-direction: column;
+        margin-top: 0;
+
+        .hero-section__btn-tablet {
+            display: block;
+            margin-bottom: 24px;
+            width: max-content;
+        }
+    }
+}
+
+.hero-section__desc-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 40px;
+
+    @include mediaTablet {
+        padding-right: 0;
+    }
+}
+
+.hero-section__btn-tablet {
+    display: none;
+}
+
+.hero-section__desc {
+    font-size: clamp(16px, 0.909rem + 0.45vw, 20px);
+    padding-bottom: 15px;
+    max-width: 450px;
+
+    @include mediaTablet {
+        padding-bottom: 24px;
+    }
+
+}
+
+.hero-section__img-1 {
+
+    @include mediaTablet {
+        display: none;
+    }
+}
+
+.hero-section__btn {
+    text-decoration: underline !important;
+    text-underline-offset: 6px;
+    transition: color .2s ease-in;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.hero-section__img-2 img {
+    @include mediaTablet {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

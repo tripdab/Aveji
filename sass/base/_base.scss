@@ -1,0 +1,31 @@
+html,
+body {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $black;
+    background: #fff;
+
+    scroll-behavior: smooth;
+}
+
+a {
+    color: $black;
+}
+
+.container {
+    max-width: 1406px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-family: $second-family;
+    font-size: clamp(28px, 1.295rem + 2.27vw, 48px);
+}
+
+.subtitle-2 {
+    font-family: $second-family;
+    font-size: clamp(24px, 1.227rem + 1.36vw, 36px);
+}
