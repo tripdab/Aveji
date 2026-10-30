@@ -1,0 +1,31 @@
+.projects-section {
+    margin-bottom: 120px;
+
+    @include mediaLaptop {
+        display: flex;
+    }
+
+    @include mediaTablet {
+        margin-bottom: 48px;
+    }
+}
+
+.projects-section__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 43px;
+
+    @include mediaLaptop {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 27px;
+    }
+
+    @include mobileLarge {
+        display: flex;
+        align-items: stretch;
+        width: auto;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+}

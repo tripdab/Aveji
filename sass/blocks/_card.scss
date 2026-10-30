@@ -1,0 +1,53 @@
+.card {
+    position: relative;
+    max-width: 445px;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    transition: all 0.2s ease-in;
+
+    &:hover .card-img {
+        transform: scale(1.1);
+
+        @include mediaLaptop {
+            transform: scale(1)
+        }
+    }
+
+    &:hover .card__footer {
+        transform: scaleY(1);
+    }
+}
+
+.card__desc {
+    color: #fff;
+}
+
+.card-img {
+    transition: all 0.2s ease-in;
+    object-fit: cover;
+}
+
+.card__footer {
+    position: absolute;
+    bottom: 0;
+    max-width: 445px;
+    width: 100%;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: rgba(33, 37, 41, 0.5);
+
+    transform: scaleY(0);
+    transform-origin: bottom;
+
+    transition: all 0.2s ease-in;
+
+    @include mediaLaptop {
+        transform: scaleY(1);
+    }
+}

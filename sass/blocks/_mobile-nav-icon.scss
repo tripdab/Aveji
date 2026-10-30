@@ -1,0 +1,125 @@
+.mobile__nav-button {
+    display: none;
+    position: fixed;
+    right: 15px;
+    z-index: 9;
+}
+
+.nav-btn {
+    border-radius: 50%;
+    background: #fff;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-btn-icon {
+    position: relative;
+    width: 24px;
+    height: 1px;
+    background-color: #000;
+}
+
+.nav-btn-icon::before,
+.nav-btn-icon::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #000;
+
+    transition: transform 0.2s ease-in,
+        top 0.2s linear 0.2s;
+}
+
+.nav-btn-icon::before {
+    top: -6px;
+    left: 0;
+    width: 24px;
+}
+
+.nav-btn-icon::after {
+    top: 6px;
+    right: 0;
+    width: 14px;
+}
+
+.nav-btn-icon--active {
+    background-color: transparent;
+}
+
+.nav-btn-icon--active::before,
+.nav-btn-icon--active::after {
+    top: 0;
+    transition: top 0.2s linear,
+        transform 0.2s ease-in 0.2s;
+}
+
+.nav-btn-icon--active::before {
+    transform: rotate(45deg);
+}
+
+.nav-btn-icon--active::after {
+    transform: rotate(-45deg);
+    width: 24px;
+}
+
+@include mediaTablet {
+
+    .nav-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mobile__nav-button {
+        display: block;
+    }
+
+    .nav-btn-icon {
+        width: 34px;
+        height: 1px;
+    }
+
+    .nav-btn-icon::before {
+        width: 34px;
+        height: 1px;
+    }
+
+    .nav-btn-icon::after {
+        width: 24px;
+        height: 1px;
+    }
+
+    .nav-btn-icon--active::after {
+        width: 34px;
+    }
+}
+
+@include mobileLarge {
+
+    .nav-btn {
+        margin-top: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-btn-icon {
+        width: 24px;
+    }
+
+    .nav-btn-icon::before {
+        width: 24px;
+    }
+
+    .nav-btn-icon::after {
+        width: 14px;
+    }
+
+    .nav-btn-icon--active::after {
+        width: 24px;
+    }
+
+}

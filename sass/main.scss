@@ -1,0 +1,34 @@
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/mixins";
+@import "./base/base";
+// fonts
+@import url(/System/Library/Fonts/Helvetica.ttc);
+@import url(../fonts/roboto/roboto.css);
+
+// blocks
+@import "./blocks/button";
+@import "./blocks/mobile-nav-icon";
+
+@import "./blocks/header";
+// @import "./blocks/hero-section-grid";
+@import "./blocks/hero-section-flex";
+@import "./blocks/about-section";
+@import "./blocks/steps-section";
+@import "./blocks/projects-section";
+@import "./blocks/card";
+@import "./blocks/reviews-section";
+@import "./blocks/form-section";
+@import "./blocks/form";
+@import "./blocks/footer";
+
+
+// .header,
+// .hero-section,
+// .about-section,
+// .steps-section,
+// .projects-section,
+// .reviews-section,
+// .form-section {
+//     display: none;
+// }
