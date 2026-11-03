@@ -277,8 +277,7 @@ a {
   margin-top: 12px;
   margin-bottom: 40px;
 }
-
-.header-row {
+.header__row {
   display: flex;
 }
 
@@ -296,45 +295,59 @@ a {
   padding-right: 15px;
 }
 
-.header-nav {
-  display: flex;
-  margin-left: auto;
-}
-@media screen and (max-width: 925px) {
-  .header-nav {
-    margin-left: unset;
-  }
-}
-
-.header-row--mobile .header-nav {
+.header-row--mobile nav {
   display: flex;
   font-size: 32px;
 }
-
-.header-row--mobile .header-nav .header-nav__list {
+.header-row--mobile nav__list {
   gap: 50px;
   margin-top: 200px;
 }
 @media screen and (max-width: 500px) {
-  .header-row--mobile .header-nav .header-nav__list {
+  .header-row--mobile nav__list {
     margin-top: 100px;
   }
 }
 
-.header-nav__list {
+@media screen and (max-width: 925px) {
+  .header {
+    margin-bottom: 20px;
+  }
+  .header-row--mobile .nav {
+    display: flex;
+    font-size: 42px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header-row--mobile .nav {
+    font-size: 22px;
+  }
+}
+.nav {
+  display: flex;
+  margin-left: auto;
+}
+@media screen and (max-width: 925px) {
+  .nav {
+    margin-left: unset;
+  }
+}
+
+.nav__list {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
   transition: all 0.2s ease-in;
 }
-.header-nav__list--mobile {
+.nav__list--mobile {
   display: flex;
 }
 
-.header-nav__link {
+.nav__link {
   position: relative;
 }
-.header-nav__link::after {
+.nav__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -346,7 +359,7 @@ a {
   transform: scaleX(0);
   transition: transform 0.3s;
 }
-.header-nav__link:hover::after {
+.nav__link:hover::after {
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -356,24 +369,11 @@ a {
 }
 
 @media screen and (max-width: 925px) {
-  .header {
-    margin-bottom: 20px;
+  .nav {
+    display: none;
   }
   .nav__phone {
     display: none;
-  }
-  .header-nav {
-    display: none;
-  }
-  .header-row--mobile .header-nav {
-    display: flex;
-    font-size: 42px;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 500px) {
-  .header-row--mobile .header-nav {
-    font-size: 22px;
   }
 }
 .hero-section {
