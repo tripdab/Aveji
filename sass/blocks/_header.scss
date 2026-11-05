@@ -8,40 +8,17 @@
 
   &__row {
     display: flex;
-  }
 
-  &__row--mobile {
-    position: fixed;
-    display: flex;
-    z-index: 99;
-    background: #d3d2d2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 12px 15px 0 15px; // Сокращенная запись padding-top/left/right
-
-    .nav {
+    &--mobile {
+      position: fixed;
       display: flex;
-      font-size: 32px;
-
-      @include mediaTablet {
-        font-size: 42px;
-        justify-content: center;
-      }
-
-      @include mobileLarge {
-        font-size: 22px;
-      }
-
-      &__list {
-        gap: 50px;
-        margin-top: 200px;
-
-        @include mobileLarge {
-          margin-top: 100px;
-        }
-      }
+      z-index: 99;
+      background: #d3d2d2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 12px 15px 0 15px;
     }
   }
 
@@ -49,7 +26,8 @@
     display: none;
     position: fixed;
     right: 15px;
-    z-index: 9;
+    z-index: 999;
+
     @include mediaTablet {
       display: block;
     }
