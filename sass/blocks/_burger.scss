@@ -1,0 +1,117 @@
+.burger {
+  // Корень блока — здесь можно задать общие для компонента свойства, если нужно
+  display: inline-block;
+
+  &__button {
+    border-radius: 50%;
+    background: #fff;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: none; // Сбрасываем дефолтную рамку button
+    padding: 0; // Сбрасываем дефолтные паддинги
+    cursor: pointer;
+
+    @include mediaTablet {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include mobileLarge {
+      margin-top: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    width: 24px;
+    height: 1px;
+    background-color: #000;
+
+    @include mediaTablet {
+      width: 34px;
+    }
+
+    @include mobileLarge {
+      width: 24px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #000;
+      transition:
+        transform 0.2s ease-in,
+        top 0.2s linear 0.2s;
+    }
+
+    &::before {
+      top: -6px;
+      left: 0;
+      width: 24px;
+
+      @include mediaTablet {
+        width: 34px;
+      }
+
+      @include mobileLarge {
+        width: 24px;
+      }
+    }
+
+    &::after {
+      top: 6px;
+      right: 0;
+      width: 14px;
+
+      @include mediaTablet {
+        width: 24px;
+      }
+
+      @include mobileLarge {
+        width: 14px;
+      }
+    }
+  }
+
+  // --- Состояние активности (когда меню открыто) ---
+  // Класс .burger--active вешается на корневой <div class="burger burger--active">
+  &--active {
+    .burger__icon {
+      background-color: transparent; // Прячем центральную линию
+
+      &::before,
+      &::after {
+        top: 0;
+        transition:
+          top 0.2s linear,
+          transform 0.2s ease-in 0.2s;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        width: 24px; // Становится полноценной линией для крестика
+
+        @include mediaTablet {
+          width: 34px;
+        }
+
+        @include mobileLarge {
+          width: 24px;
+        }
+      }
+    }
+  }
+}
