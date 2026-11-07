@@ -373,31 +373,31 @@ a {
   display: flex;
 }
 
-.hero-section {
+.hero {
   margin-bottom: 120px;
 }
 @media screen and (max-width: 925px) {
-  .hero-section {
+  .hero {
     margin-bottom: 48px;
   }
 }
 
-.hero-section__flex {
+.hero__row {
   display: flex;
   flex-direction: column;
 }
 
-.hero-section__header {
+.hero__header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 @media screen and (max-width: 925px) {
-  .hero-section__header {
+  .hero__header {
     flex-direction: column;
     align-items: flex-start;
   }
-  .hero-section__header .hero-section__btn-desktop {
+  .hero__header .hero-section__btn-desktop {
     display: none;
   }
 }
@@ -435,7 +435,6 @@ a {
   .hero-section__footer .hero-section__btn-tablet {
     display: block;
     margin-bottom: 24px;
-    width: -moz-max-content;
     width: max-content;
   }
 }
@@ -486,8 +485,7 @@ a {
   .hero-section__img-2 img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -689,7 +687,6 @@ a {
   position: relative;
   max-width: 445px;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
   flex-shrink: 0;
@@ -713,8 +710,7 @@ a {
 
 .card-img {
   transition: all 0.2s ease-in;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .card__footer {

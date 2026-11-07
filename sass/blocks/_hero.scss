@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
     margin-bottom: 120px;
 
     @include mediaTablet {
@@ -6,12 +6,12 @@
     }
 }
 
-.hero-section__flex {
+.hero__row {
     display: flex;
     flex-direction: column;
 }
 
-.hero-section__header {
+.hero__header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
