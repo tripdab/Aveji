@@ -22,12 +22,12 @@
 @import './blocks/form';
 @import './blocks/footer';
 
-// .header,
+.header,
 // .hero-section,
-// .about-section,
-// .steps-section,
-// .projects-section,
-// .reviews-section,
-// .form-section {
-//     display: none;
-// }
+.about-section,
+.steps-section,
+.projects-section,
+.reviews-section,
+.form-section {
+  display: none;
+}

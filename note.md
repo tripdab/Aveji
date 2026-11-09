@@ -9,5 +9,5 @@
 <!-- GIT -->
 
 git add .
-git commit -m "refactor: Исправил названия классов по БЭМ в блоках header и nav. Изменил названия класов для burger. Переименовал файл nav-btn-icon.scss в burger.scss "
+git commit -m "refactor: Исправил названия классов по БЭМ для блока Hero."
 git push
