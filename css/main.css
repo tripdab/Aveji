@@ -838,7 +838,6 @@ a {
 .footer {
   margin-bottom: 16px;
 }
-
 .footer__row {
   display: flex;
   justify-content: space-between;
@@ -850,7 +849,6 @@ a {
     align-items: center;
   }
 }
-
 .footer__copyright {
   font-size: 18px;
   text-transform: uppercase;
@@ -860,7 +858,6 @@ a {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 925px) {
   .footer__policy {
     display: flex;
@@ -872,31 +869,19 @@ a {
   }
 }
 @media screen and (max-width: 925px) {
-  .footer__policy span {
+  .footer__divider {
     display: none;
   }
 }
-
 .footer__link {
   transition: all 0.2s ease-in;
 }
 .footer__link:hover {
   color: #ddd7c0;
 }
-
 .footer__social {
   display: flex;
   gap: 40px;
   font-size: 18px;
   text-transform: uppercase;
-}
-
-.header,
-.hero,
-.about,
-.steps,
-.projects,
-.reviews,
-.footer {
-  display: none;
 }/*# sourceMappingURL=main.css.map */
