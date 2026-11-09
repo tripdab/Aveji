@@ -15,7 +15,7 @@
 @import './blocks/hero';
 @import './blocks/about';
 @import './blocks/steps';
-@import './blocks/projects-section';
+@import './blocks/projects';
 @import './blocks/card';
 @import './blocks/reviews-section';
 @import './blocks/form-section';
@@ -25,8 +25,8 @@
 .header,
 .hero,
 .about,
-// .steps,
-.projects-section,
+.steps,
+// .projects,
 .reviews-section,
 .form-section {
   display: none;

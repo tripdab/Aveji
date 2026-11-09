@@ -625,34 +625,33 @@ a {
   }
 }
 
-.projects-section {
+.projects {
   margin-bottom: 120px;
 }
 @media screen and (max-width: 1024px) {
-  .projects-section {
+  .projects {
     display: flex;
   }
 }
 @media screen and (max-width: 925px) {
-  .projects-section {
+  .projects {
     margin-bottom: 48px;
   }
 }
-
-.projects-section__grid {
+.projects__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding-top: 43px;
 }
 @media screen and (max-width: 1024px) {
-  .projects-section__grid {
+  .projects__grid {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 27px;
   }
 }
 @media screen and (max-width: 500px) {
-  .projects-section__grid {
+  .projects__grid {
     display: flex;
     align-items: stretch;
     width: auto;
@@ -671,28 +670,25 @@ a {
   flex-shrink: 0;
   transition: all 0.2s ease-in;
 }
-.card:hover .card-img {
+.card:hover .card__img {
   transform: scale(1.1);
 }
 @media screen and (max-width: 1024px) {
-  .card:hover .card-img {
+  .card:hover .card__img {
     transform: scale(1);
   }
 }
 .card:hover .card__footer {
   transform: scaleY(1);
 }
-
-.card__desc {
-  color: #fff;
-}
-
-.card-img {
+.card__img {
   transition: all 0.2s ease-in;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
+.card__desc {
+  color: #fff;
+}
 .card__footer {
   position: absolute;
   bottom: 0;
@@ -908,7 +904,7 @@ a {
 .header,
 .hero,
 .about,
-.projects-section,
+.steps,
 .reviews-section,
 .form-section {
   display: none;
