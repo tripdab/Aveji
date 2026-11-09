@@ -425,65 +425,75 @@
         </div>
       </section>
 
-      <section class="form-section" id="order">
+      <section class="order" id="order">
         <div class="container">
-          <div class="form-section__row">
+          <div class="order__row">
             <img
-              class="form-section__img"
+              class="order__img"
               src="./img/form/form-img.jpg"
               srcset="./img/form/form-img@2x.jpg 2x"
               alt="Интерьер гостинной" />
 
-            <div class="form-section__col">
-              <h2 class="form-section__title subtitle">
+            <div class="order__col">
+              <h2 class="order__title subtitle">
                 Хотите заказать проект?
               </h2>
-              <p>Оставьте заявку, и мы вам перезвоним</p>
+              <p class="order__desc">
+                Оставьте заявку, и мы вам перезвоним
+              </p>
 
               <!-- form -->
               <form class="form" action="">
                 <!-- name -->
                 <div class="form__group">
                   <input
-                    class="input"
+                    class="form__input"
                     id="name"
                     type="text"
                     required />
-                  <label for="name">Имя</label>
+                  <label class="form__label" for="name">Имя</label>
                 </div>
 
                 <!-- e-mail -->
                 <div class="form__group">
                   <input
-                    class="input"
+                    class="form__input"
                     id="email"
                     type="email"
                     required />
-                  <label for="email">E-mail</label>
+                  <label class="form__label" for="email"
+                    >E-mail</label
+                  >
                 </div>
 
                 <!-- phone -->
                 <div class="form__group">
                   <input
-                    class="input"
+                    class="form__input"
                     id="phone"
                     type="tel"
                     required />
-                  <label for="phone">Телефон</label>
+                  <label class="form__label" for="phone"
+                    >Телефон</label
+                  >
                 </div>
+
+                <button class="form__btn button" type="submit">
+                  Отправить заявку
+                </button>
               </form>
-              <!-- form button -->
-              <button class="button">Отправить заявку</button>
 
               <!-- store  -->
-              <div class="form-section__store-links">
-                <a class="form-section__store-link" href="#!">
+              <div class="order__store-links">
+                <a class="order__store-link" href="#!">
                   <img
+                    class="order__store-img"
                     src="./img/form/app-store-btn.svg"
                     alt="App store" />
                 </a>
-                <a class="form-section__store-link" href="#!">
+                <a class="order__store-link" href="#!">
                   <img
+                    class="order__store-img"
                     src="./img/form/google-store-btn.svg"
                     alt="Google store" />
                 </a>

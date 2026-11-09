@@ -749,53 +749,47 @@ a {
   padding-bottom: 20px;
 }
 
-.form-section {
+.order {
   margin-bottom: 120px;
 }
 @media screen and (max-width: 925px) {
-  .form-section {
+  .order {
     margin-bottom: 60px;
   }
 }
-
-.form-section__row {
+.order__row {
   display: flex;
   gap: clamp(60px, -9.473rem + 20.54vw, 136px);
 }
 @media screen and (max-width: 1024px) {
-  .form-section__row {
+  .order__row {
     justify-content: center;
   }
 }
-
-.form-section__col {
+.order__col {
   display: flex;
   flex-direction: column;
 }
-
-.form-section__title {
+.order__title {
   padding-bottom: 32px;
 }
 @media screen and (max-width: 925px) {
-  .form-section__title {
+  .order__title {
     padding-bottom: 20px;
   }
 }
-
-.form-section__store-links {
+.order__store-links {
   display: flex;
   gap: 8px;
 }
-
-.form-section__store-link {
+.order__store-link {
   transition: all 0.2s ease-in;
 }
-.form-section__store-link:hover {
+.order__store-link:hover {
   opacity: 0.7;
 }
-
 @media screen and (max-width: 1024px) {
-  .form-section__img {
+  .order__img {
     display: none;
   }
 }
@@ -812,11 +806,13 @@ a {
     margin-top: 39px;
   }
 }
-
 .form__group {
   position: relative;
 }
-.form__group input {
+.form__group:focus {
+  border-bottom: 1px solid #ddd7c0;
+}
+.form__input {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 12px;
@@ -824,22 +820,19 @@ a {
   background-color: unset;
   transition: all 0.2s ease-in;
 }
-.form__group input:focus {
+.form__input:focus {
   border-color: #ddd7c0;
 }
-.form__group label {
+.form__input:focus ~ .form__label, .form__input:valid ~ .form__label {
+  top: -14px;
+  font-size: 12px;
+}
+.form__label {
   position: absolute;
   left: 0;
   top: 0;
   transition: all 0.2s ease-in;
   padding-top: 2px;
-}
-.form__group input:focus ~ label, .form__group input:valid ~ label {
-  top: -14px;
-  font-size: 12px;
-}
-.form__group:focus {
-  border-bottom: 1px solid #ddd7c0;
 }
 
 .footer {
@@ -903,6 +896,7 @@ a {
 .about,
 .steps,
 .projects,
-.form-section {
+.reviews,
+.footer {
   display: none;
 }/*# sourceMappingURL=main.css.map */

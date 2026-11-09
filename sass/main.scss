@@ -18,7 +18,7 @@
 @import './blocks/projects';
 @import './blocks/card';
 @import './blocks/reviews';
-@import './blocks/form-section';
+@import './blocks/order';
 @import './blocks/form';
 @import './blocks/footer';
 
@@ -27,7 +27,8 @@
 .about,
 .steps,
 .projects,
-// .reviews,
-.form-section {
+.reviews,
+// .order,
+.footer {
   display: none;
 }
