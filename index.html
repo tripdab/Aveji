@@ -14,27 +14,30 @@
     <header class="header" id="header">
       <div class="container">
         <div class="header__row">
-          <a href="./index.html">
-            <picture>
+          <a class="header__logo" href="./index.html">
+            <picture class="header__logo-pic">
               <source
                 media="(max-width: 500px)"
                 srcset="./img/logo/mobile-logo.svg" />
-              <img src="./img/logo/logo.svg" alt="Logo icon" />
+              <img
+                class="header__logo-img"
+                src="./img/logo/logo.svg"
+                alt="Logo icon" />
             </picture>
           </a>
 
           <nav class="nav">
-            <ul class="nav__list nav__list--mobile">
-              <li>
+            <ul class="nav__list nav__list_mobile">
+              <li class="nav__item">
                 <a class="nav__link" href="#about">О нас</a>
               </li>
-              <li>
+              <li class="nav__item">
                 <a class="nav__link" href="#projects">Проекты</a>
               </li>
-              <li>
+              <li class="nav__item">
                 <a class="nav__link" href="#steps">Материалы</a>
               </li>
-              <li>
+              <li class="nav__item">
                 <a class="nav__link" href="#reviews">Отзывы</a>
               </li>
             </ul>

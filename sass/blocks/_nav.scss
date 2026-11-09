@@ -11,7 +11,7 @@
     display: flex;
     gap: 40px;
 
-    &--mobile {
+    &_mobile {
       @include mediaTablet {
         flex-direction: column;
         row-gap: 8px;
@@ -63,7 +63,7 @@
   }
 }
 
-.header__row--mobile {
+.header__row_mobile {
   .nav {
     display: flex;
   }

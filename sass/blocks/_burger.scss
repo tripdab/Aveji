@@ -1,5 +1,4 @@
 .burger {
-  // Корень блока — здесь можно задать общие для компонента свойства, если нужно
   display: inline-block;
 
   &__button {
@@ -11,8 +10,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    border: none; // Сбрасываем дефолтную рамку button
-    padding: 0; // Сбрасываем дефолтные паддинги
+    border: none;
+    padding: 0;
     cursor: pointer;
 
     @include mediaTablet {
@@ -83,10 +82,9 @@
   }
 
   // --- Состояние активности (когда меню открыто) ---
-  // Класс .burger--active вешается на корневой <div class="burger burger--active">
-  &--active {
+  &_active {
     .burger__icon {
-      background-color: transparent; // Прячем центральную линию
+      background-color: transparent;
 
       &::before,
       &::after {
@@ -102,7 +100,7 @@
 
       &::after {
         transform: rotate(-45deg);
-        width: 24px; // Становится полноценной линией для крестика
+        width: 24px;
 
         @include mediaTablet {
           width: 34px;
