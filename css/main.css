@@ -710,16 +710,15 @@ a {
   }
 }
 
-.reviews-section {
+.reviews {
   margin-bottom: 120px;
 }
 @media screen and (max-width: 925px) {
-  .reviews-section {
+  .reviews {
     margin-bottom: 48px;
   }
 }
-
-.reviews-section__row {
+.reviews__row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -727,12 +726,11 @@ a {
   margin-top: 43px;
 }
 @media screen and (max-width: 500px) {
-  .reviews-section__row {
+  .reviews__row {
     margin-top: 20px;
   }
 }
-
-.reviews-section__item {
+.reviews__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -742,7 +740,6 @@ a {
   max-width: 445px;
   min-height: 327px;
 }
-
 .reviews__name {
   font-family: "Helvetica", sans-serif;
   font-weight: 700;
@@ -905,7 +902,7 @@ a {
 .hero,
 .about,
 .steps,
-.reviews-section,
+.projects,
 .form-section {
   display: none;
 }/*# sourceMappingURL=main.css.map */
