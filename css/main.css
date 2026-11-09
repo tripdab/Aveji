@@ -481,80 +481,74 @@ a {
   }
 }
 
-.about-section {
+.about {
   margin-bottom: 147px;
 }
 @media screen and (max-width: 925px) {
-  .about-section {
+  .about {
     margin-bottom: 53px;
   }
 }
-
-.about-section__row {
+.about__row {
   display: flex;
   gap: 135px;
 }
 @media screen and (max-width: 925px) {
-  .about-section__row {
+  .about__row {
     flex-direction: column;
     gap: 20px;
   }
 }
-
 @media screen and (max-width: 925px) {
-  .about-section__title-desctop {
+  .about__title_desktop {
     display: none;
   }
 }
-
-.about-section__title-tablet {
+.about__title_tablet {
   display: none;
 }
 @media screen and (max-width: 925px) {
-  .about-section__title-tablet {
+  .about__title_tablet {
     display: inline-flex;
   }
 }
-
-.about-section__desc-wrapper {
+.about__desc-wrapper {
   padding-top: 30px;
   padding-right: 110px;
 }
 @media screen and (max-width: 925px) {
-  .about-section__desc-wrapper {
+  .about__desc-wrapper {
     padding-top: 0;
   }
 }
 @media screen and (max-width: 500px) {
-  .about-section__desc-wrapper {
+  .about__desc-wrapper {
     padding-right: 0;
   }
 }
-
-.about-section__text {
+.about__text {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-bottom: 44px;
 }
 @media screen and (max-width: 925px) {
-  .about-section__text {
+  .about__text {
     margin-bottom: 39px;
   }
 }
-
-.about-section__info {
+.about__info {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.about-section__info-item {
-  max-width: 146px;
-}
 @media screen and (max-width: 925px) {
-  .about-section__info {
+  .about__info {
     gap: 20px;
   }
+}
+.about__info-item {
+  max-width: 146px;
 }
 
 .steps-section {
@@ -920,7 +914,7 @@ a {
 }
 
 .header,
-.about-section,
+.hero,
 .steps-section,
 .projects-section,
 .reviews-section,
