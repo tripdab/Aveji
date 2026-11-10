@@ -318,12 +318,11 @@ a {
 }
 .nav__list {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  row-gap: 8px;
 }
 @media screen and (max-width: 925px) {
   .nav__list_mobile {
-    flex-direction: column;
-    row-gap: 8px;
     gap: 50px;
     margin-top: 200px;
     font-size: 32px;

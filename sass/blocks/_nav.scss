@@ -9,12 +9,11 @@
 
   &__list {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    row-gap: 8px;
 
     &_mobile {
       @include mediaTablet {
-        flex-direction: column;
-        row-gap: 8px;
         gap: 50px;
         margin-top: 200px;
         font-size: 32px;
