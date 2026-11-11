@@ -27,7 +27,7 @@
           </a>
 
           <nav class="nav">
-            <ul class="nav__list nav__list_mobile">
+            <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="#about">О нас</a>
               </li>
@@ -46,9 +46,12 @@
             >
           </nav>
 
+          <!-- Затемняющий фон (Backdrop) -->
+          <div class="nav-overlay"></div>
+
           <div class="header__burger burger">
-            <button class="burger__button">
-              <div class="burger__icon"></div>
+            <button class="burger__button" aria-label="Открыть меню">
+              <span class="burger__icon"></span>
             </button>
           </div>
         </div>
