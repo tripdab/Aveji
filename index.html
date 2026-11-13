@@ -98,20 +98,54 @@
                 >
 
                 <div class="hero__main-photo">
-                  <img
-                    class="hero__img"
-                    src="./img/hero/hero-img-1.jpg"
-                    srcset="./img/hero/hero-img-1@2x.jpg 2x"
-                    alt="image" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/hero/hero-img-1.avif    1x,
+                        ./img/hero/hero-img-1@2x.avif 2x
+                      "
+                      type="image/avif" />
+                    <source
+                      srcset="
+                        ./img/hero/hero-img-1.webp    1x,
+                        ./img/hero/hero-img-1@2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <img
+                      class="hero__img"
+                      src="./img/hero/hero-img-1.jpg"
+                      srcset="./img/hero/hero-img-1@2x.jpg 2x"
+                      alt="Современная гостиная с рыжим кожаным диваном, белым журнальным столиком и высоким растением в горшке на светлом ковре."
+                      width="329"
+                      height="493"
+                      fetchpriority="high" />
+                  </picture>
                 </div>
               </div>
 
               <div class="hero__side-photo">
-                <img
-                  class="hero__img"
-                  src="./img/hero/hero-img-2.jpg"
-                  srcset="./img/hero/hero-img-2@2x.jpg 2x"
-                  alt="image" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/hero/hero-img-2.avif 1x,
+                      ./img/hero/hero-img-2.avif 2x
+                    "
+                    type="image/avif" />
+                  <source
+                    srcset="
+                      ./img/hero/hero-img-2.webp 1x,
+                      ./img/hero/hero-img-2.webp 2x
+                    "
+                    type="image/webp" />
+
+                  <img
+                    class="hero__img"
+                    src="./img/hero/hero-img-2.jpg"
+                    srcset="./img/hero/hero-img-2@2x.jpg 2x"
+                    alt="Современный интерьер гостиной с оранжевым креслом, золотистым комодом с ротанговыми фасадами, круглым зеркалом и крупными комнатными растениями."
+                    width="678"
+                    height="809" />
+                </picture>
               </div>
             </div>
           </div>
