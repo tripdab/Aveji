@@ -748,7 +748,7 @@ a {
     margin-bottom: 48px;
   }
 }
-.reviews__row {
+.reviews__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -756,7 +756,7 @@ a {
   margin-top: 43px;
 }
 @media screen and (max-width: 500px) {
-  .reviews__row {
+  .reviews__list {
     margin-top: 20px;
   }
 }
