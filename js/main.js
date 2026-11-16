@@ -3,4 +3,4 @@ import { projectsData } from './modules/projectsData.js';
 import { renderProjects } from './modules/renderProjects.js';
 
 initBurgerMenu();
-renderProjects(projectsData, '#projects-container');
+renderProjects(projectsData, '.projects__container');

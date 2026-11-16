@@ -668,20 +668,20 @@ a {
     margin-bottom: 48px;
   }
 }
-.projects__grid {
+.projects__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding-top: 43px;
 }
 @media screen and (max-width: 1024px) {
-  .projects__grid {
+  .projects__container {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 27px;
   }
 }
 @media screen and (max-width: 500px) {
-  .projects__grid {
+  .projects__container {
     display: flex;
     align-items: stretch;
     width: auto;

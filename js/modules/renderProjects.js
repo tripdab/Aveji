@@ -32,11 +32,9 @@ function createProjectCard(item) {
 }
 
 // Функция рендера всех карточек в контейнер
-function renderProjects(data, containerSelector) {
+export function renderProjects(data, containerSelector) {
   const container = document.querySelector(containerSelector);
 
   if (!container) return;
   container.innerHTML = data.map(createProjectCard).join('');
 }
-
-renderProjects(projectsData, '#projects-container');
