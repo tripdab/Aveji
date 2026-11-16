@@ -385,12 +385,28 @@
       <section class="order" id="order">
         <div class="container">
           <div class="order__row">
-            <img
-              class="order__img"
-              src="./img/form/form-img.jpg"
-              srcset="./img/form/form-img@2x.jpg 2x"
-              alt="Интерьер гостинной" />
-
+            <picture>
+              <source
+                srcset="
+                  ./img/order/order-img.avif    1x,
+                  ./img/order/order-img@2x.avif 2x
+                "
+                type="image/avif" />
+              <source
+                srcset="
+                  ./img/order/order-img.webp    1x,
+                  ./img/order/order-img@2x.webp 2x
+                "
+                type="image/webp" />
+              <img
+                class="order__img"
+                src="./img/order/order-img.jpg"
+                srcset="./img/order/order-img@2x.jpg 2x"
+                alt="Современная гостиная в темных тонах с большим диваном, телевизором на черной стене, стеллажом с подсветкой и круглым журнальным столиком."
+                width="562"
+                height="566"
+                fetchpriority="high" />
+            </picture>
             <div class="order__col">
               <h2 class="order__title subtitle">
                 Хотите заказать проект?
@@ -440,18 +456,17 @@
                 </button>
               </form>
 
-              <!-- store  -->
               <div class="order__store-links">
                 <a class="order__store-link" href="#!">
                   <img
                     class="order__store-img"
-                    src="./img/form/app-store-btn.svg"
+                    src="./img/order/app-store-btn.svg"
                     alt="App store" />
                 </a>
                 <a class="order__store-link" href="#!">
                   <img
                     class="order__store-img"
-                    src="./img/form/google-store-btn.svg"
+                    src="./img/order/google-store-btn.svg"
                     alt="Google store" />
                 </a>
               </div>

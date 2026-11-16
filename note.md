@@ -35,4 +35,4 @@ git merge <ветка>
 git push origin main
 
 Шаг 6: Удаление отработанной ветки (Локально)
-git branch -d <ветка>
+git branch -d <ветка> - пока не удалял ветку projects-card
