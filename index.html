@@ -311,12 +311,28 @@
 
           <div class="projects__grid">
             <!-- card 1 -->
+
             <a href="#!" class="card projects__card">
-              <img
-                src="./img/projects/project-img-01.jpg"
-                srcset="./img/projects/project-img-01@2x.jpg 2x"
-                alt="card image"
-                class="card__img" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/projects/project-img-01.avif    1x,
+                    ./img/projects/project-img-01@2x.avif 2x
+                  "
+                  type="image/avif" />
+                <source
+                  srcset="
+                    ./img/projects/project-img-01.webp    1x,
+                    ./img/projects/project-img-01@2x.webp 2x
+                  "
+                  type="image/webp" />
+
+                <img
+                  src="./img/projects/project-img-01.jpg"
+                  srcset="./img/projects/project-img-01@2x.jpg 2x"
+                  alt="Тумба под телевизор"
+                  class="card__img" />
+              </picture>
 
               <div class="card__footer">
                 <p class="card__desc">Тумба под телевизор</p>
@@ -584,6 +600,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
