@@ -2,8 +2,8 @@
 @import './base/reset';
 @import './base/mixins';
 @import './base/base';
+
 // fonts
-@import url(/System/Library/Fonts/Helvetica.ttc);
 @import url(../fonts/roboto/roboto.css);
 
 // blocks
@@ -21,14 +21,3 @@
 @import './blocks/order';
 @import './blocks/form';
 @import './blocks/footer';
-
-// .header,
-// .hero,
-// .about,
-// .steps,
-// .projects,
-// .reviews,
-// .order,
-// .footer {
-//   //   display: none;
-// }

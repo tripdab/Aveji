@@ -1,5 +1,4 @@
 /* Reset and base styles  */
-@import url(/System/Library/Fonts/Helvetica.ttc);
 @import url(../fonts/roboto/roboto.css);
 * {
   padding: 0px;
@@ -120,9 +119,13 @@ body {
   line-height: 1.4;
   color: #212529;
   background: #fff;
-  scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 a {
   color: #212529;
 }
@@ -134,12 +137,12 @@ a {
 }
 
 .subtitle {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: clamp(28px, 1.295rem + 2.27vw, 48px);
 }
 
 .subtitle-2 {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: clamp(24px, 1.227rem + 1.36vw, 36px);
 }
 
@@ -430,7 +433,7 @@ a {
   }
 }
 .hero__title {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: clamp(28px, 0.75rem + 5vw, 72px);
   line-height: 1.2;
   text-transform: uppercase;
@@ -771,7 +774,7 @@ a {
   min-height: 327px;
 }
 .reviews__name {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #212529;

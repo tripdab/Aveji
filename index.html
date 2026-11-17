@@ -359,13 +359,15 @@
               </p>
 
               <!-- form -->
-              <form class="form" action="">
+              <form class="form" action="#">
                 <!-- name -->
                 <div class="form__group">
                   <input
                     class="form__input"
                     id="name"
+                    name="name"
                     type="text"
+                    autocomplete="name"
                     required />
                   <label class="form__label" for="name">Имя</label>
                 </div>
@@ -375,7 +377,9 @@
                   <input
                     class="form__input"
                     id="email"
+                    name="email"
                     type="email"
+                    autocomplete="email"
                     required />
                   <label class="form__label" for="email"
                     >E-mail</label
@@ -387,7 +391,9 @@
                   <input
                     class="form__input"
                     id="phone"
+                    name="phone"
                     type="tel"
+                    autocomplete="tel"
                     required />
                   <label class="form__label" for="phone"
                     >Телефон</label

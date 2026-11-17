@@ -1,4 +1,9 @@
-1. Поработать с картинками avif/webp
+1. Проверить ошибки в консоле в браузере
+2. W3C Markup Validation Service (validator.w3.org) - Проверка валидности HTML
+3. W3C CSS Validation Service - Проверка валидности CSS
+4. Отсутствие синтаксических ошибок в скомпилированном CSS-файле.
+5. Google Lighthouse (вкладка в DevTools Chrome F12) Комплексный аудит
+6. Can I Use (caniuse.com) Кроссбраузерность
 
 <!-- GIT -->
 
