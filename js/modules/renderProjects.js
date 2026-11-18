@@ -14,6 +14,7 @@ function createProjectCard(item) {
           type="image/webp" />
 
         <img
+          loading="lazy"
           src="${basePath}.jpg"
           srcset="${basePath}@2x.jpg 2x"
           alt="${item.alt}"

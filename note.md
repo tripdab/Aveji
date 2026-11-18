@@ -1,4 +1,4 @@
-1. Проверить ошибки в консоле в браузере
+1. Добавить loading="lazy"
 2. W3C Markup Validation Service (validator.w3.org) - Проверка валидности HTML
 3. W3C CSS Validation Service - Проверка валидности CSS
 4. Отсутствие синтаксических ошибок в скомпилированном CSS-файле.
