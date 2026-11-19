@@ -2,7 +2,7 @@
 
 Адаптивный лендинг для студии корпусной и дизайнерской мебели на заказ.
 
-🔗 **[Посмотреть демо на GitHub Pages](https://github.io)**
+🔗 **[Посмотреть демо на GitHub Pages](https://tripdab.github.io/Aveji/)**
 
 ![Превью проекта Aveji](./img/preview.jpg)
 
